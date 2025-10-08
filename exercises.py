@@ -190,7 +190,6 @@ def hide_secrets(recodrs):
     for i in recodrs:
         if 'secret' not in i.lower():
             out.append(i)
-    print (out)
     return out
 
 
@@ -234,4 +233,5 @@ def file_to_str_list(path):
     with open(path, 'r') as f:
         for line in f:
             linelist.append(line)
+
     return linelist
